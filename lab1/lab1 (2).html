@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Lab 1</title>
+        <!--  CSS File -->
+    </head>
+    <body>
+        <h1>Registration form</h1>
+    <form action="" method="POST">
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="student_ID">Student ID: </label>
+        <input type="text" id="student_ID" name="student_ID" required><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone_number">Phone Number: </label>
+        <input type="text" id="phone_number" name="phone_number" required><br>
+
+        <label>Gender: </label>
+        <input type="radio" id="Male" name="gender" value="Male" required>
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="Other" name="gender" value="Other">
+        <label for="Other">Other</label><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+
+        <h2>Academic Information</h2>
+        <label for="program_of_study">Program of Study</label>
+        <select name="program_of_study" id="program_of_study" required>
+            <option value="Computer_Science">Computer Science</option>
+            <option value="Information_System">Information System</option>
+            <option value="Business">Business</option>
+        </select>
+
+        <br><br>
+        <label for="year_of_study">Year of Study</label>
+        <select name="year_of_study" id="year_of_study" required>
+            <option value="Year1">Year 1</option>
+            <option value="Year2">Year 2</option>
+            <option value="Year3">Year 3</option>
+            <option value="Year4">Year 4</option>
+        </select>
+
+        <br><br>
+        <input type="checkbox" id="Database" name="subject[]" value="Database">
+        <label for="Database">Database</label><br>
+        <input type="checkbox" id="software_engineering" name="subject[]" value="Software Engineering">
+        <label for="software_engineering">Software Engineering</label><br>
+        <input type="checkbox" id="network_communication" name="subject[]" value="Network Communication">
+        <label for="network_communication">Network Communication</label><br>
+        <input type="checkbox" id="programming_techniqueII" name="subject[]" value="Programming Technique II">
+        <label for="programming_techniqueII">Programming Technique II</label><br>
+        <input type="checkbox" id="pingpong" name="subject[]" value="Ping Pong">
+        <label for="pingpong">Ping Pong</label><br>
+
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    
+    </form>
+    </body>
+    
+</html>
